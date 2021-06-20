@@ -1,5 +1,11 @@
 version: 0.2
 
+eureka:
+  instance:
+    statusPageUrl: https://${eureka.hostname}/info
+    healthCheckUrl: https://${eureka.hostname}/health
+    homePageUrl: https://${eureka.hostname}/
+
 phases:
   install:
     runtime-versions:
